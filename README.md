@@ -3,4 +3,4 @@
 
 
 
-关于如何在github上搭建个人博客，以及如何使用`hexo`主题？这部分内容在我的博客：https://baiyazi.github.io 中均有文章说明。
+关于如何在`github`上搭建个人博客，以及如何使用`hexo`主题？这部分内容在我的博客：https://baiyazi.github.io 中均有文章说明。
