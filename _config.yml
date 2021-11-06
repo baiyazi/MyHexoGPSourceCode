@@ -90,6 +90,7 @@ theme: matery-master
 deploy:
   type: git
   repo: https://github.com/baiyazi/baiyazi.github.io.git
+  token: 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
   branch: master
 
 ## 新增内容
