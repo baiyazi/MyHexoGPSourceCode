@@ -1,5 +1,5 @@
 ---
-title: Android插件化开发指南 | 2.15 实现一个音乐播放器APP
+title: Android插件化开发指南 | Activity转场效果（仿酷狗音乐启动页）
 date: 2021年10月31日 17:35:10
 comments: true
 categories: "Android插件化开发"
@@ -142,7 +142,6 @@ overridePendingTransition(0, R.anim.out);
 
 # 3. 后记
 完整代码地址：[https://github.com/baiyazi/MusicApp](https://github.com/baiyazi/MusicApp/tree/main/mymusicdemo-01)
-
 
 ___
 **References**

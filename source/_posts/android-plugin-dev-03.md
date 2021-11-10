@@ -1,5 +1,5 @@
 ---
-title: Android插件化开发指南 | 2.15 实现一个音乐播放器APP
+title: Android插件化开发指南 | ViewPager+Fragment优化（预加载和懒加载）
 date: 2021年11月9日 16:19:53
 comments: true
 categories: "Android插件化开发"
