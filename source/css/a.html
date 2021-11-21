@@ -1,0 +1,102 @@
+<link href="spider.css" rel="stylesheet" type="text/css">
+  <ul class="two">
+    <li class="headbg lihead">
+	  <span>表达式</span>
+	  <span>说明</span>
+	</li>
+	<li class="info"><span>选取节点</span></li>
+	<li>
+	  <span>nodename</span>
+	  <span>选取此节点的所有子节点。</span>
+	</li>
+	<li>
+	  <span>/</span>
+	  <span>从根节点选取。</span>
+	</li>
+	<li>
+	  <span>//</span>
+	  <span>从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置。</span>
+	<li>
+	  <span>.</span>
+	  <span>选取当前节点。</span>
+	</li>
+	<li>
+	  <span>..</span>
+	  <span>选取当前节点的父节点。</span>
+	</li>
+	<li>
+	  <span>@</span>
+	  <span>选取属性。</span>
+	</li>
+	<li class="info"><span>**谓语**用来查找某个特定的节点或者包含某个指定的值的节点，被嵌在方括号中。</span></li>
+	<li>
+	  <span>/bookstore/book[1]</span>
+	  <span>选取属于 bookstore 子元素的第一个 book 元素。</span>
+	</li>
+	<li>
+	  <span>/bookstore/book[last()]</span>
+	  <span>选取属于 bookstore 子元素的最后一个 book 元素。</span>
+	</li>
+	<li>
+	  <span>/bookstore/book[last()-1]</span>
+	  <span>选取属于 bookstore 子元素的倒数第二个 book 元素。</span>
+	</li>
+	<li>
+	  <span>/bookstore/book[position()< 3] </span>
+	  <span>选取最前面的两个属于 bookstore 元素的子元素的 book 元素。</span>
+	</li>
+	<li>
+	  <span>//title[@lang]</span>
+	  <span>选取所有拥有名为 lang 的属性的 title 元素。</span>
+	</li>
+	<li>
+	  <span>//title[@lang=’eng’]</span>
+	  <span>选取所有 title 元素，且这些元素拥有值为 eng 的 lang 属性。</span>
+	</li>
+	<li>
+	  <span>/bookstore/book[price>35.00]</span>
+	  <span>选取 bookstore 元素的所有 book 元素，且其中的 price 元素的值须大于 35.00。</span>
+	</li>
+	<li>
+	  <span>/bookstore/book[price>35.00]/title</span>
+	  <span>选取 bookstore 元素中的 book 元素的所有 title 元素，且其中的 price 元素的值须大于 35.00</span>
+	</li>
+	<li class="info"><span>通配符</span></li>
+	<li>
+	  <span>*</span>
+	  <span>匹配任何元素节点。</span>
+	</li>
+	<li>
+	  <span>@*</span>
+	  <span>匹配任何属性节点。</span>
+	</li>
+	<li>
+	  <span>node()</span>
+	  <span>匹配任何类型的节点。</span>
+	</li>
+	<li>
+	  <span>/bookstore/*</span>
+	  <span>选取 bookstore 元素的所有子元素。</span>
+	</li>
+	<li>
+	  <span>//*</span>
+	  <span>选取文档中的所有元素。</span>
+	</li>
+	<li>
+	  <span>//title[@*]</span>
+	  <span>选取所有带有属性的 title 元素。</span>
+	</li>
+	<li class="info"><span>多选路径</span></li>
+	<li>
+	  <span>//book/title | //book/price	</span>
+	  <span>选取 book 元素的所有 title 和 price 元素。</span>
+	</li>
+	<li>
+	  <span>//title | //price</span>
+	  <span>选取文档中的所有 title 和 price 元素。</span>
+	</li>
+	<li class="liend">
+	  <span>/bookstore/book/title | //price	</span>
+	  <span>选取属于 bookstore 元素的 book 元素的所有 title 元素，以及文档中所有的 price 元素。</span>
+	</li>
+  </ul>
